@@ -22,10 +22,8 @@ import { bootloader } from '@angularclass/bootloader';
 })
 export class MainModule {}
 
-export const platformRef = platformBrowserDynamic();
-
 export function main() {
-  return platformRef.bootstrapModule(MainModule);
+  return platformBrowserDynamic().bootstrapModule(MainModule);
 }
 
 bootloader(main); // this will bootstrap your
