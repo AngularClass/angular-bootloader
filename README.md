@@ -35,6 +35,7 @@ bootloader(main); // this will bootstrap your
 <script async src="app.bundle.js"></script>
 ```
 
+If you have a vendor file you can delete it and include async tag in your one app bundle
 
 enjoy — **AngularClass**
 
