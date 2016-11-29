@@ -13,6 +13,7 @@
 > `npm install @angularclass/bootloader --save`
 
 
+`main.module.ts`
 ```typescript
 import { bootloader } from '@angularclass/bootloader';
 
@@ -28,6 +29,10 @@ export function main() {
 }
 
 bootloader(main); // this will bootstrap your
+```
+`index.html`
+```html
+<script async src="app.bundle.js"></script>
 ```
 
 
