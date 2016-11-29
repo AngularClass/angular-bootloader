@@ -1,0 +1,58 @@
+{
+  "name": "@angularclass/bootloader",
+  "version": "1.0.0",
+  "description": "Angular 2 Bootloader for async script tag and hmr support via @AngularClass",
+  "main": "dist/index.js",
+  "module": "esm/index.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "esm"
+  ],
+  "scripts": {
+    "watch": "tsc --watch",
+    "prebuild": "rimraf dist",
+    "build": "npm run build:es5 && npm run build:esm",
+    "build:es5": "ngc -p tsconfig.es5.json",
+    "prebuild:esm": "rimraf esm",
+    "build:esm": "ngc -p tsconfig.esm.json",
+    "test": "",
+    "start": "npm run build:es5",
+    "prepublish": "npm run test && npm run build:es5"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@angular/common": "2.2.3",
+    "@angular/compiler": "2.2.3",
+    "@angular/compiler-cli": "2.2.3",
+    "@angular/core": "2.2.3",
+    "@angular/platform-browser": "2.2.3",
+    "@angular/platform-browser-dynamic": "^2.2.3",
+    "@angular/router": "3.2.3",
+    "rimraf": "^2.5.4",
+    "rxjs": "5.0.0-beta.12",
+    "typescript": "~2.0.10",
+    "zone.js": "~0.6.26"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AngularClass/angular2-bootloader.git"
+  },
+  "author": "PatrickJS <github@gdi2290.com>",
+  "license": "Apache-2.0",
+  "keywords": [
+    "angular bootloader",
+    "angular 2 bootloader",
+    "angular async tag",
+    "angular 2 async scripts",
+    "angular2",
+    "angular2modules",
+    "AngularClass",
+    "Angular Class",
+    "AngularClassModules"
+  ],
+  "bugs": {
+    "url": "https://github.com/AngularClass/angular2-bootloader/issues"
+  },
+  "homepage": "https://github.com/AngularClass/angular2-bootloader#readme"
+}
