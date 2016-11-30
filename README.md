@@ -26,7 +26,7 @@ export function main() {
   return platformBrowserDynamic().bootstrapModule(MainModule);
 }
 
-bootloader(main); // this will bootstrap your
+bootloader(main); // this will bootstrap your main function
 ```
 `index.html`
 ```html
