@@ -1,6 +1,6 @@
 {
   "name": "@angularclass/bootloader",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Angular 2 Bootloader for async script tag and hmr support via @AngularClass",
   "main": "dist/index.js",
   "module": "esm/index.js",

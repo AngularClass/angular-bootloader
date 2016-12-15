@@ -9,6 +9,13 @@
 # Angular 2 Bootloader
 > Angular 2 Bootloader for async script tag and hmr support
 
+#### Why do I need async tag support?
+Chrome V8 parses script tags with `<script async>` or `<script defer>` on a separate thread once downloading of `index.html` begins. Initial load of your `index.html` improves by up to **10%**
+
+
+![czkf6kfviaamqm6](https://cloud.githubusercontent.com/assets/1016365/21236289/6f7dffd6-c2c8-11e6-97f4-291f8eeeb72d.jpg)
+
+
 ### Install
 > `npm install @angularclass/bootloader --save`
 
@@ -26,7 +33,8 @@ export function main() {
   return platformBrowserDynamic().bootstrapModule(MainModule);
 }
 
-bootloader(main); // this will bootstrap your app
+bootloader(main); // this will bootstrap your app via main function
+
 ```
 `index.html`
 ```html
