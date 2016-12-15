@@ -33,7 +33,8 @@ export function main() {
   return platformBrowserDynamic().bootstrapModule(MainModule);
 }
 
-bootloader(main); // this will bootstrap your main function
+bootloader(main); // this will bootstrap your app via main function
+
 ```
 `index.html`
 ```html
